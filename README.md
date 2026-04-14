@@ -1,4 +1,3 @@
-
 # ⚡ AI-POWERED ENERGY CONSUMPTION FORECASTING SYSTEM
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue?style=flat-square)] [![ML](https://img.shields.io/badge/ML-MLP%20Regressor-orange?style=flat-square)] [![Status](https://img.shields.io/badge/Status-Completed-green?style=flat-square)]
@@ -7,84 +6,101 @@
 This project is a Machine Learning-based Energy Consumption Forecasting System that predicts electricity usage using historical time-series data. It simulates real-world smart grid systems where AI helps in forecasting future energy demand to improve efficiency, reduce cost, and prevent energy wastage.
 
 ## 🔥 WHY THIS PROJECT EXISTS
-Traditional energy systems fail to predict demand accurately, leading to power wastage, overproduction of electricity, high operational costs, and poor load balancing. This AI system solves this problem by predicting future energy consumption using machine learning.
+Traditional energy systems fail to predict demand accurately, leading to power wastage, overproduction of electricity, high costs, and poor load balancing. This AI system solves this problem using machine learning forecasting.
 
 ## 🏗️ SYSTEM ARCHITECTURE
-Data Collection → Data Cleaning → Feature Engineering (Hour, Day) → Train/Test Split → MLP Regressor Model → Model Training → Prediction Engine → Evaluation (MAE, R²) → Visualization Output
+Data Collection → Data Cleaning → Feature Engineering (Hour, Day) → Train/Test Split → MLP Regressor Model → Training → Prediction → Evaluation (MAE, R²) → Visualization
 
 ## 📊 DATASET OVERVIEW
-Time-series energy consumption dataset with columns:
+Time-series energy consumption dataset:
 - Datetime
-- Energy Consumption (kWh)
+- Energy (kWh)
 
 Feature Engineering:
 - Hour of Day
 - Day of Week
 
-## ⚙️ INSTALLATION & SETUP
-git clone https://github.com/your-username/AI-Energy-Forecasting-System.git
-cd AI-Energy-Forecasting-System
-python -m venv venv
-venv\Scripts\activate
-source venv/bin/activate
-pip install -r requirements.txt
+## ⚙️ INSTALLATION
+git clone https://github.com/your-username/AI-Energy-Forecasting-System.git  
+cd AI-Energy-Forecasting-System  
+python -m venv venv  
+venv\Scripts\activate  
+source venv/bin/activate  
+pip install -r requirements.txt  
 
 ## 🚀 USAGE
-Run project using:
-python main.py
+python main.py  
 
-OR use Jupyter Notebook / Colab:
-Load dataset → Preprocess data → Train model → Generate predictions → Visualize results
+OR:
+- Load dataset  
+- Preprocess data  
+- Train model  
+- Predict output  
+- Visualize graphs  
 
 ## ⚙️ TECH STACK
-Python, Pandas, NumPy, Matplotlib, Scikit-learn, Joblib, MLP Regressor
+Python, Pandas, NumPy, Matplotlib, Scikit-learn, Joblib
 
 ## 📁 PROJECT STRUCTURE
+```
 AI-Energy-Forecasting-System/
 ├── data/
-│   └── energy.csv
 ├── models/
-│   └── energy_forecast_model.pkl
-├── outputs/
-│   ├── final_energy_forecast.png
-│   ├── energy_prediction_graph.png
-│   └── graph.png
+├── images/
+│   ├── graph1.png
+│   ├── graph2.png
+│   ├── graph3.png
 ├── notebooks/
 ├── src/
 ├── README.md
 └── requirements.txt
+```
+## 📈 RESULTS
+Model learns energy usage patterns and predicts future consumption with reasonable accuracy using MAE and R² evaluation.
 
-## 📈 RESULTS & PERFORMANCE
-The model successfully learns energy consumption patterns and captures peak and low usage trends. Evaluation metrics include Mean Absolute Error (MAE) and R² Score.
+---
 
 ## 📸 OUTPUT VISUALIZATION
+
 <p align="center">
-<img src="outputs/final_energy_forecast.png" width="700"/>
-</p>
-<p align="center">
-<img src="outputs/energy_prediction_graph.png" width="700"/>
-</p>
-<p align="center">
-<img src="outputs/graph.png" width="700"/>
+<img src="images/graph1.png" width="700"/>
 </p>
 
-## 🚀 WHAT I LEARNED
-Time-series forecasting, feature engineering, machine learning model training, evaluation techniques, end-to-end ML pipeline development, real-world energy system simulation.
+<p align="center">
+<img src="images/graph2.png" width="700"/>
+</p>
 
-## ⚠️ LIMITATIONS
-Only basic time features used (hour, day), no weather data, and model can be improved using deep learning techniques like LSTM.
+<p align="center">
+<img src="images/graph3.png" width="700"/>
+</p>
 
-## 🔮 FUTURE IMPROVEMENTS
-Implement LSTM, build Flask API for real-time predictions, create Streamlit dashboard, and use real-world smart grid datasets.
+<p align="center">
+<img src="images/graph4.png" width="700"/>
+</p>
+---
 
 ## 🌐 CONNECT WITH ME
-GitHub: https://github.com/your-username  
-LinkedIn: https://www.linkedin.com/in/your-link  
-Instagram: https://www.instagram.com/your-instagram  
-Portfolio: https://your-portfolio-link.com  
+
+<a href="https://github.com/your-username">
+<img src="https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github">
+</a>
+
+<a href="https://www.linkedin.com/in/your-link">
+<img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin">
+</a>
+
+<a href="https://www.instagram.com/your-instagram">
+<img src="https://img.shields.io/badge/Instagram-Follow-purple?style=for-the-badge&logo=instagram">
+</a>
+
+<a href="https://your-portfolio-link.com">
+<img src="https://img.shields.io/badge/Portfolio-Visit%20Website-orange?style=for-the-badge&logo=google-chrome">
+</a>
+
+---
 
 ## 👨‍💻 AUTHOR
 Mahesh Bhakre
 
 ## ⭐ NOTE
-This project demonstrates an end-to-end AI system for energy forecasting used in smart grid and industrial optimization systems.
+This project demonstrates an AI-based energy forecasting system for smart grids and real-world energy optimization.
